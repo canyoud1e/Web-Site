@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Інформаційний портал про сучасні веб-технології, структурування HTML-документів та семантичну розмітку.">
+    <title>Головна | Інформаційний портал WebStructure</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Інформаційний портал WebStructure</h1>
+    <p>Освітній ресурс про семантичну архітектуру HTML-документів</p>
+    <address>
+        Контакти редакції:
+        <a href="mailto:ragulinroman14@gmail.com">ragulinroman14@gmail.com</a>
+    </address>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#">Головна</a></li>
+        <li><a href="#">Статті</a></li>
+        <li><a href="#">Дослідження</a></li>
+        <li><a href="#">Про проєкт</a></li>
+        <li><a href="#">Контакти</a></li>
+    </ul>
+</nav>
+
+<main>
+
+    <article>
+        <header>
+            <h2>Семантична структура сучасного HTML</h2>
+            <p>Опубліковано <time datetime="2026-02-11">11 лютого 2026</time></p>
+        </header>
+
+        <section>
+            <h3>Роль глобальних орієнтирів</h3>
+            <p>
+                Глобальні орієнтири визначають базову архітектуру документа. 
+                До них належать елементи <code>&lt;header&gt;</code>, 
+                <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, 
+                <code>&lt;aside&gt;</code> та <code>&lt;footer&gt;</code>.
+            </p>
+
+            <blockquote cite="https://html.spec.whatwg.org/">
+                «Семантичні елементи надають значення структурі документа, 
+                роблячи його зрозумілішим для людей і машин».
+            </blockquote>
+        </section>
+
+        <section>
+            <h3>Вкладеність та ієрархія</h3>
+            <p>
+                Кожен <code>&lt;article&gt;</code> може містити власні 
+                <code>&lt;section&gt;</code>, що формують логічні підрозділи.
+                Важливо дотримуватися послідовності заголовків:
+                від <strong>h1</strong> до <strong>h3</strong> без пропусків рівнів.
+            </p>
+
+            <figure>
+                <img src="structure-diagram.png" alt="Схема семантичної структури HTML-документа">
+                <figcaption>
+                    Схема взаємодії основних семантичних блоків сторінки.
+                </figcaption>
+            </figure>
+        </section>
+
+        <footer>
+            <p>Автор статті: <strong>Редакція WebStructure</strong></p>
+        </footer>
+    </article>
+
+    <article>
+        <header>
+            <h2>Контентні одиниці як автономні модулі</h2>
+            <p>Опубліковано <time datetime="2026-01-28">28 січня 2026</time></p>
+        </header>
+
+        <section>
+            <h3>Що таке автономний допис?</h3>
+            <p>
+                Автономний допис — це самостійний інформаційний блок, 
+                який може існувати поза межами сторінки (наприклад, у RSS-стрічці).
+                Саме тому для нього використовується тег 
+                <code>&lt;article&gt;</code>.
+            </p>
+        </section>
+
+        <section>
+            <h3>Допоміжні елементи</h3>
+            <p>
+                Для уточнення інформації використовуються спеціальні теги:
+                <code>&lt;time&gt;</code> для дат, 
+                <code>&lt;address&gt;</code> для контактів,
+                <code>&lt;blockquote&gt;</code> для цитат.
+            </p>
+
+            <blockquote>
+                Правильна семантика — це інвестиція в доступність та SEO.
+            </blockquote>
+        </section>
+
+        <footer>
+            <p>Останнє оновлення: <time datetime="2026-02-01">1 лютого 2026</time></p>
+        </footer>
+    </article>
+
+</main>
+
+<aside>
+    <h2>Додаткові матеріали</h2>
+    <ul>
+        <li><a href="#">Посібник із доступності</a></li>
+        <li><a href="#">HTML Living Standard</a></li>
+        <li><a href="#">Рекомендації з SEO-структури</a></li>
+    </ul>
+</aside>
+
+<footer>
+    <p>&copy; 2026 WebStructure. Усі права захищені.</p>
+<p>Останнє оновлення сайту: <time datetime="2026-02-11">11 лютого 2026</time></p>
+</footer>
+
+</body>
+</html>
